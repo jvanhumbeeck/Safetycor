@@ -3,6 +3,7 @@
 	<head>
 		<title>Safetycor</title>
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 	</head>
 
 	<body>
@@ -13,13 +14,13 @@
 			</div>
 
 			<div class="menu-contents">
-				<a href="#">Home</a>
-				<a href="#">Contact</a>
+				<button onclick="scrollToDiv('home')">Home</button>
+				<button onclick="scrollToDiv('contact')">Contact</button>
 			</div>
 		</header>
 
 		<!-- carousel -->
-		<section>
+		<section id="home">
 			<div class="carousel">
 				<div class="carousel-content">
 					<h2>Veiligheids coördinatie</h2>
@@ -36,40 +37,75 @@
 		<!-- specialiteiten -->
 		<section class="sub-content">
 			<div class="circle-hover">
-				<div class="red" style="background-image: url(images/dakanker.jpg);">
+				<div style="background-image: url(images/dakanker.jpg);">
 					<h3>Valbeveiliging</h3>
 					<p>Ankers, bibo's, ...</p>
 				</div>
-				<div class="gold" style="background-image: url(images/kooiladder.jpg);">
+				<div style="background-image: url(images/kooiladder.jpg);">
 					<h3>Kooiladders</h3>
 					<p>Bordes, luikje, ...</p>
 				</div>
-				<div class="green" style="background-image: url(images/leuning.jpg);">
+				<div style="background-image: url(images/leuning.jpg);">
 					<h3>Leuningen</h3>
 					<p>Aan ladder, met looppad, ...</p>
 				</div>
-				<div class="blue" style="background-image: url(images/looppad.jpg);">
+				<div style="background-image: url(images/looppad.jpg);">
 					<h3>Looppaden</h3>
 					<p>In rubber of aluminium</p>
 				</div>
-				<div class="red" style="background-image: url(images/rail.jpg);">
+				<div style="background-image: url(images/rail.jpg);">
 					<h3>Rails</h3>
 					<p>Recht of met bochten</p>
 				</div>
-				<div class="gold" style="background-image: url(images/trappen.jpg);">
+				<div style="background-image: url(images/trappen.jpg);">
 					<h3>Trappen</h3>
 					<p>Naar een deur, of over brandmuur</p>
 				</div>
-				<div class="green" style="background-image: url(images/pbm.svg); background-size: 330px 330px;">
+				<div style="background-image: url(images/pbm.svg); background-size: 330px 330px;">
 					<h3>PBM's</h3>
 					<p>Touw, harnes, ...</p>
 				</div>
 			</div>
 		</section>
 
-		<footer class="footer">
-			<!-- Info, social media, sitemap -->
-		</footer>
+		<section id="contact" class="sub-header">
+			<h2>Contacteer ons</h2>
+		</section>
+
+		<section class="sub-content contact">
+			<table>
+				<tr>
+					<td><i class="far fa-user fa-2x"></i></td>
+					<td><h3>Naam: Gianni Vercammen</h3></td>
+				</tr>
+				<tr>
+					<td><i class="fas fa-mobile-alt fa-2x"></i></td>
+					<td><h3>+32 (0)3 866 16 51</h3></td>
+				</tr>
+				<tr>
+					<td><i class="fas fa-envelope fa-2x"></i></td>
+					<td><h3>info@safetycor.be</h3></td>
+				</tr>
+				<tr>
+					<td><i class="far fa-map fa-2x"></i></td>
+					<td><h3>Donkstraat 64a 2870 Ruisbroek (puurs)</h3></td>
+				</tr>
+				<tr>
+					<td><i class="fas fa-credit-card fa-2x"></i></td>
+					<td><h3>BTW: 0848.195.318</h3></td>
+				</tr>
+			</table>
+
+			<form action method="POST">
+
+			</form>
+		</section>
+
+		<section class="sub-header">
+			<p class="copyright">Copyright 2018 © Safetycor bvba</p>
+		</section>
+
+		<script src="script.js"></script>
 
 	</body>
 </html>

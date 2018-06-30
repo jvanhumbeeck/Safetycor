@@ -4,16 +4,19 @@ body {
 
 .menu {
 	position: fixed;
+	display: table;
 	z-index: 10;
 	top: 0;
 	left: 0;
 	right: 0;
+	width: 100%;
 	background-color: rgba(0, 0, 0, 0.8);
-	padding: 0em 7.5vw;
 }
 
 .menu-header {
-	float: left;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 7.5vw;
 }
 
 .menu-header h1 {
@@ -22,12 +25,26 @@ body {
 }
 
 .menu-contents {
-	float: right;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+	padding-right: 7.5vw;
 }
 
-.menu-contents a {
+.menu-contents button {
 	text-decoration: none;
 	color: #054A91;
+	font-size: 1.5rem;
+	margin: 0 0.5rem;
+	padding: 0;
+	transition: color 0.5s ease;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.menu-contents button:hover {
+	color: #2D7DD2;
 }
 
 .carousel {
@@ -73,11 +90,8 @@ body {
 	padding: 0em 0.8rem;
 	overflow: auto;
 	margin: auto;
+	padding: 2rem 0;
 	text-align: center;
-}
-
-.circle-hover {
-
 }
 
 .circle-hover div {
@@ -93,10 +107,11 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	color: #CED3DC;
+	color: #e2cfcf;
 	border: 4px solid #1C3144;
 	transition: border-color 1s ease, box-shadow 1s ease;
 	z-index: 1;
+	cursor: pointer;
 }
 
 .circle-hover div::before {
@@ -115,6 +130,12 @@ body {
 	transition: opacity 500ms ease;
 }
 
+.circle-hover div:hover {
+	border: 4px solid rgb(80, 255, 83);
+	box-shadow: 0 0 20px rgb(80, 255, 83);
+	text-shadow: 0 0 5px #e2cfcf;
+}
+
 .circle-hover div:hover::before  {
 	visibility: visible;
 	opacity: 1;
@@ -131,26 +152,27 @@ body {
 	opacity: 1;
 }
 
-.red:hover {
-	border: 4px solid rgb(255, 147, 137);
-	box-shadow: 0 0 20px rgb(255, 147, 137);
-	text-shadow: 0 0 5px #CED3DC;
+.contact table {
+	margin: auto;
 }
 
-.gold:hover {
-	border: 4px solid rgb(255, 163, 60);
-	box-shadow: 0 0 20px rgb(255, 163, 60);
-	text-shadow: 0 0 5px #CED3DC;
+.contact i {
+	color: #2D7DD2;
+	margin-right: 0.5rem;
 }
 
-.green:hover {
-	border: 4px solid rgb(80, 255, 83);
-	box-shadow: 0 0 20px rgb(80, 255, 83);
-	text-shadow: 0 0 5px #CED3DC;
+.contact h3 {
+	color: #bba117;
+	text-align: left;
+	margin-left: 0.5rem;
 }
 
-.blue:hover {
-	border: 4px solid rgb(88, 169, 255);
-	box-shadow: 0 0 20px rgb(88, 169, 255);
-	text-shadow: 0 0 5px #CED3DC;
+.contact div {
+	display: block;
+}
+
+.copyright {
+	font-size: 0.75rem;
+	margin: 0.3rem 0;
+	text-align: center;
 }
